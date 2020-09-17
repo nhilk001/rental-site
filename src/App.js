@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -60,5 +59,3 @@ const rows = [
 }
 
 export default App;
-=======
->>>>>>> 17db510ec6ee7755c7c7057b2465d21085e6a0a9
