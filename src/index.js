@@ -5,9 +5,11 @@ import Login from './latest/Login';
 import Registration from './latest/Registration';
 //import Search from './latest/Search';
 import SecurityQuestions from './latest/SecurityQuestions';
+import Pay from './latest/Pay.js';
 
 import * as serviceWorker from './serviceWorker';
 //this is the main page I believe
+
 
 ReactDOM.render(<Registration/>,
   document.getElementById('root')
