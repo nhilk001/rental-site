@@ -5,10 +5,11 @@ import Login from './latest/Login';
 import Registration from './latest/Registration';
 import Search from './latest/Search';
 import SecurityQuestions from './latest/SecurityQuestions';
+import Pay from './latest/Pay.js';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<SecurityQuestions/>,
+ReactDOM.render(<Pay/>,
   document.getElementById('root')
 );
 
