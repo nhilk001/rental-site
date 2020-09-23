@@ -8,7 +8,7 @@ import SecurityQuestions from './latest/SecurityQuestions';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Search/>,
+ReactDOM.render(<Registration/>,
   document.getElementById('root')
 );
 
