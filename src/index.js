@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Login from './latest/Login';
 import Registration from './latest/Registration';
-import Search from './latest/Search';
+//import Search from './latest/Search';
 import SecurityQuestions from './latest/SecurityQuestions';
+import Pay from './latest/Pay.js';
 
 import * as serviceWorker from './serviceWorker';
+//this is the main page I believe
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c09a6a07d3a74e2c80de939d5007bf781522158
 ReactDOM.render(<Registration/>,
   document.getElementById('root')
 );
