@@ -110,7 +110,7 @@ export default function DatePickers() {
       <div className={classes.root}>
 
       <Button variant="contained" color="primary">
-        Search
+        Searc
       </Button>
 
     </div>
