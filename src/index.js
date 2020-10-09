@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Login from './latest/Login';
 import Registration from './latest/Registration';
-//import Search from './latest/Search';
+import Search from './latest/Search.js';
 import SecurityQuestions from './latest/SecurityQuestions';
 import Pay from './latest/Pay.js';
 import NavBar from './latest/NavBar.js';
@@ -14,7 +14,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-ReactDOM.render(<UserTable/>,
+ReactDOM.render(<Search/>,
   document.getElementById('root')
 );
 
