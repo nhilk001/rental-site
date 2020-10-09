@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
+import Button from '@material-ui/core/Button';
+
 import clsx from 'clsx';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -105,12 +107,19 @@ export default function DatePickers() {
         </Select>
       </FormControl>
 
+      <div className={classes.root}>
 
+      <Button variant="contained" color="primary">
+        Search
+      </Button>
 
+    </div>
 
     </form>
 
-
+            
+     
+    
    
   );
 }
