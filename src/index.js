@@ -7,13 +7,14 @@ import Registration from './latest/Registration';
 import SecurityQuestions from './latest/SecurityQuestions';
 import Pay from './latest/Pay.js';
 import NavBar from './latest/NavBar.js';
+import UserTable from './latest/UserTable';
 
 import * as serviceWorker from './serviceWorker';
 //this is the main page I believe
 
 
 
-ReactDOM.render(<NavBar/>,
+ReactDOM.render(<UserTable/>,
   document.getElementById('root')
 );
 
