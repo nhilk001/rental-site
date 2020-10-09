@@ -10,11 +10,9 @@ import Pay from './latest/Pay.js';
 import * as serviceWorker from './serviceWorker';
 //this is the main page I believe
 
-<<<<<<< HEAD
+
+
 ReactDOM.render(<Pay/>,
-=======
-ReactDOM.render(<Registration/>,
->>>>>>> c6f08f5c91a95f2102f44abd146f5cafd973dec7
   document.getElementById('root')
 );
 
