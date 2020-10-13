@@ -6,15 +6,16 @@ import Registration from './latest/Registration';
 import Search from './latest/Search.js';
 import SecurityQuestions from './latest/SecurityQuestions';
 import Pay from './latest/Pay.js';
-import NavBar from './latest/NavBar.js';
+import NavBar from './latest/NavBar';
 import UserTable from './latest/UserTable';
+import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 //this is the main page I believe
 
 
 
-ReactDOM.render(<Search/>,
+ReactDOM.render(<App/>,
   document.getElementById('root')
 );
 

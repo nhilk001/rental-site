@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
+import Button from '@material-ui/core/Button';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -38,6 +39,12 @@ export default function DataTable() {
   return (
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
+
+      <Button variant="contained" color="primary">
+              Add Entry
+      </Button>
+
+    
     </div>
   );
 }

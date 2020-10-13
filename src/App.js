@@ -1,61 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Login from './latest/Login';
+import Registration from './latest/Registration';
+import Search from './latest/Search.js';
+import SecurityQuestions from './latest/SecurityQuestions';
+import Pay from './latest/Pay.js';
+import NavBar from './latest/NavBar';
+import UserTable from './latest/UserTable';
+import CarTable from './latest/CarTable';
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-});
+import * as serviceWorker from './serviceWorker';
+//this is the main page I believe
 
-function createData(name, miles, color, seats) {
-  return { name, miles, color, seats };
-}
+function App(){
 
-const rows = [
-  createData('Ford Explorer', 159, 6.0, 24),
-  createData('Toyota camery', 237, 9.0, 37),
-  createData('some other car', 262, 16.0, 24),
-  createData('other car', 305, 3.7, 67),
-  createData('other car also', 356, 16.0, 49),
-];
- function App() {
-  return (
-    <TableContainer component={Paper}>
-      <Table aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Cars for rent</TableCell>
-            <TableCell align="right">miles</TableCell>
-            <TableCell align="right">Color</TableCell>
-            <TableCell align="right">seats</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.miles}</TableCell>
-              <TableCell align="right">{row.color}</TableCell>
-              <TableCell align="right">{row.seats}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  );
+    return (
+
+        <Router>
+            <div className="App">
+
+                <Switch>
+                <Route path="/" exact component={NavBar} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/reg" component={Registration} />
+                    <Route path="/search" component={Search} />
+                    <Route path="/questions" component={SecurityQuestions} />
+                    <Route path="/pay" component={Pay} />
+                    <Route path="/usertable" component={UserTable} />
+                    <Route path="/cartable" component={CarTable} />
+                </Switch>
+            </div>
+        </Router>
+
+    );
 }
 
 export default App;
